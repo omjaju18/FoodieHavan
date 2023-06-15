@@ -1,0 +1,130 @@
+.meal-item {
+    height: 100%;
+    padding: 15px 15px;
+    background-color: var(--light_pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.meal-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.meal-item button {
+    width: 100%;
+    margin-top: 1.2rem;
+    font-size: 1.1rem !important;
+}
+
+.meal-detail-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal-detail-title i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--dark_pink);
+}
+
+.meal-detail-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #777;
+    margin-bottom: 2rem;
+}
+
+.meal-detail-subcontent {
+    width: 45%;
+}
+
+.meal-detail-subcontent img {
+    width: 100%;
+}
+
+.meal-detail-subcontent h3 {
+    padding-bottom: 10px;
+    color: var(--dark_pink);
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #777;
+}
+
+.meal-detail-subcontent h4 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.meal-detail-subcontent button {
+    margin-top: 20px;
+}
+
+.meal-detail-ingredients {
+    color: #fff;
+    background-color: var(--dark_pink);
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.meal-detail-ingredients ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.react-player {
+    margin: 0 auto 2rem auto;
+    padding-bottom: 2rem;
+}
+
+.meal-details-instructions ul {
+    list-style: disc;
+}
+
+.meal-details-instructions ul li {
+    margin: 10px 15px;
+}
+@media screen and (max-width:850px) {
+    .meal-item button{
+        font-size: 1rem!important;
+    }
+    .meal-detail-title i {
+        margin-bottom: 1rem;
+        font-size: 1.6rem
+    }
+    .meal-details-instructions{
+        font-size: 1rem;
+    }
+    
+}
+@media screen and (max-width:600px){
+    .meal-item button{
+        font-size: 0.9rem!important;
+    }
+    .meal-detail-content{
+        flex-direction: column;
+    }
+    .meal-detail-subcontent {
+        margin: 20px auto 0 auto;
+        width: 90%;
+    }
+    .meal-detail-subcontent h3 {
+        display: none;
+    }
+    .meal-detail-title{
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+    .react-player {
+        width: 100%!important;
+    }
+    .meal-details-instructions ul li{
+        font-size: 0.9rem;
+    }
+    
+}

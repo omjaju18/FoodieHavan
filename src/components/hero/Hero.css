@@ -1,0 +1,43 @@
+.hero{
+    background-image: url('../../images/home-background.jpg'), linear-gradient(rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0.3));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+.hero-container-data {
+    width: 50%;
+}
+.hero-container-data h2{
+    font-size: 2.4rem;
+    color: var(--dark_pink);
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+.hero-container-data p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--text_color_1);
+    margin-bottom: 2rem;
+}
+@media screen and (max-width:850px) {
+    .hero-container-data{
+        width: 70%;
+    } 
+    .hero-container-data h2{
+        font-size: 2rem;
+    }
+    .hero-container-data p{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .hero-container-data{
+        width: 100%;
+    }
+    .hero-container-data h2{
+        font-size: 1.8rem;
+    }
+    .hero-container-data p{
+        font-size: 1rem;
+    }
+}
